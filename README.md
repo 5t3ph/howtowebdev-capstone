@@ -6,7 +6,9 @@
 
 ## Starting the Capstone Course
 
-Begin by cloning this repo, and then visit [LearnWithSteph.dev](https://learnwithsteph.dev) to view all available videos and supplemental transcripts.
+Begin by cloning this repo, and then visit [LearnFromSteph.dev](https://learnfromsteph.dev) to view all available videos and supplemental transcripts.
+
+_Note:_ Videos are currently in progress of being recorded, and will be available for early release to Patreon backers at the "Official Patron" tier or higher. [Become an Official Patron >](https://www.patreon.com/join/howtowebdev/checkout?rid=4390962)
 
 ## General use of this repo
 
