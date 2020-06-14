@@ -1,8 +1,6 @@
 # Learn Web Development With Steph
 
-## Capstone #1: Setup for a Website Project
-
-This lesson begins the Capstone project.
+## Capstone #1: Translating a Design into Semantic HTML
 
 [**Course information >**](https://learnfromsteph.dev)
 

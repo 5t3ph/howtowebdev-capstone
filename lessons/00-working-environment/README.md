@@ -4,7 +4,7 @@
 
 This directory is a blank project that will be the foundation built upon for each lesson in this course.
 
-[**Subscribe for access to all video courses >**](https://www.youtube.com/channel/UC8qc2AyBbNmvgIky6236nHA/)
+[**Course information >**](https://learnfromsteph.dev)
 
 ## Building and running on localhost
 
