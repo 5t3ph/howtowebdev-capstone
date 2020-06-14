@@ -3,6 +3,6 @@
 *.scssc
 *.log
 node_modules
-public
+dist
 .DS_Store
 
