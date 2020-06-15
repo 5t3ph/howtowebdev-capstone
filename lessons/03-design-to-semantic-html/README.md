@@ -1,6 +1,6 @@
 # Learn Web Development With Steph
 
-## Capstone #1: Translating a Design into Semantic HTML
+## Capstone #3: Translating a Design into Semantic HTML
 
 [**Course information >**](https://learnfromsteph.dev)
 
