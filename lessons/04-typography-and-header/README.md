@@ -1,6 +1,6 @@
 # Learn Web Development With Steph
 
-## Capstone #4: Translating a Design into Semantic HTML
+## Capstone #4: Typography and Base Header Styles
 
 [**Course information >**](https://learnfromsteph.dev)
 
