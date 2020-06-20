@@ -98,9 +98,39 @@ header .lead {
   color: #dcd9ee;
 }
 
+.background-black {
+  background-color: #040234;
+  color: #dcd9ee;
+}
+
 /* Utilities */
+
+.wrapper {
+  max-width: 1024px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
 
 .center {
   margin-left: auto;
   margin-right: auto;
+}
+
+.flexbox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flexbox--aligncenter {
+  align-items: center;
+}
+
+.padding-v-md {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.margin-v-0 {
+  margin-top: 0;
+  margin-bottom: 0;
 }
