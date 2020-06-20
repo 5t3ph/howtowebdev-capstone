@@ -1,0 +1,106 @@
+/*
+ * [Modified] Modern CSS Reset
+ * @link https://github.com/hankchizljaw/modern-css-reset
+*/
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-size: 100%;
+  font-family: sans-serif;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Typography */
+h1,
+h2,
+h3 {
+  font-family: "Kulim Park", sans-serif;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+/* Header */
+header {
+  padding: 60px 0;
+  text-align: center;
+}
+
+header h1 {
+  color: #ff7ca6;
+}
+
+header .lead {
+  max-width: 40ch;
+}
+
+/* Type Utilities */
+.lead {
+  font-size: 125%;
+  letter-spacing: 0.03em;
+}
+
+/* Color Utilities */
+.background-dark {
+  background-color: #150f64;
+  color: #dcd9ee;
+}
+
+/* Utilities */
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
