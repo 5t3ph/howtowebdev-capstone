@@ -86,10 +86,19 @@ header .lead {
   max-width: 40ch;
 }
 
+/* Main Content */
+main {
+  color: #767676;
+}
+
 /* Type Utilities */
 .lead {
   font-size: 125%;
   letter-spacing: 0.03em;
+}
+
+.max-line-length {
+  max-width: 60ch;
 }
 
 /* Color Utilities */
@@ -101,6 +110,14 @@ header .lead {
 .background-black {
   background-color: #040234;
   color: #dcd9ee;
+}
+
+.text-dark {
+  color: #150f64;
+}
+
+.text-medium {
+  color: #7893dc;
 }
 
 /* Utilities */
@@ -133,4 +150,9 @@ header .lead {
 .margin-v-0 {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.margin-v-lg {
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
