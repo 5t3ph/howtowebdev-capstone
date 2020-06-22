@@ -1,6 +1,6 @@
 # Learn Web Development With Steph
 
-## Capstone #5: Footer and Alignment Utilities
+## Capstone #6: Main Section Type Colors and Alignment
 
 [**Course information >**](https://learnfromsteph.dev)
 

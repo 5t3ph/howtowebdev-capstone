@@ -82,10 +82,6 @@ header h1 {
   color: #ff7ca6;
 }
 
-header .lead {
-  max-width: 40ch;
-}
-
 /* Main Content */
 main {
   color: #767676;
