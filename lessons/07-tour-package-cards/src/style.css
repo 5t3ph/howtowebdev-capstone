@@ -87,6 +87,45 @@ main {
   color: #767676;
 }
 
+/* Component: Card */
+.card {
+  border-radius: 8px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.18);
+}
+
+.card__img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 20vh;
+  border-radius: 8px 8px 0 0;
+}
+
+.card__content {
+  padding: 24px;
+}
+
+.card h3 span {
+  font-family: monospace;
+  font-size: 0.8em;
+  padding: 0.05em 0.25em;
+  background-color: rgba(255, 124, 166, 0.4);
+  border-radius: 4px;
+}
+
+/* Component: Button */
+.button {
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  background-color: #150f64;
+  text-decoration: none;
+  font-weight: bold;
+  color: #ff7ca6;
+  display: inline-block;
+  line-height: 1.1;
+  text-align: center;
+}
+
 /* Type Utilities */
 .lead {
   font-size: 125%;
@@ -95,6 +134,12 @@ main {
 
 .max-line-length {
   max-width: 60ch;
+}
+
+.list-unstyled {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 /* Color Utilities */
@@ -136,6 +181,10 @@ main {
 
 .flexbox--aligncenter {
   align-items: center;
+}
+
+.flexbox--3col > * {
+  flex: 0 1 30%;
 }
 
 .padding-v-md {
