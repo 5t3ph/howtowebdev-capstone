@@ -74,12 +74,26 @@ h3 {
 
 /* Header */
 header {
+  position: relative;
   padding: 60px 0;
+  min-height: 50vh;
   text-align: center;
+  background-image: url("img/starry-sky.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 100vw 100vh rgba(21, 15, 100, 0.6);
 }
 
 header h1 {
   color: #ff7ca6;
+  line-height: 1.1;
+}
+
+header img {
+  position: absolute;
+  max-height: 48vh;
+  max-width: 25vw;
+  bottom: 1vh;
 }
 
 /* Main Content */

@@ -4,12 +4,16 @@ const browserSync = require("browser-sync").create();
 const paths = {
   styles: {
     src: ["./src/*.css"],
-    dest: "./dist/"
+    dest: "./dist/",
   },
   html: {
     src: ["./src/*.html"],
-    dest: "./dist/"
-  }
+    dest: "./dist/",
+  },
+  img: {
+    src: ["./src/img/"],
+    dest: "./dist/img/",
+  },
 };
 
 /* STYLES */
@@ -28,14 +32,23 @@ function html() {
     .pipe(browserSync.stream());
 }
 
+/* IMAGES */
+function images() {
+  return gulp
+    .src(paths.img.src)
+    .pipe(gulp.dest(paths.img.dest))
+    .pipe(browserSync.stream());
+}
+
 /* FUNCTIONS */
 function watch() {
   browserSync.init({
     server: {
-      baseDir: "./src/"
-    }
+      baseDir: "./src/",
+    },
   });
   gulp.watch(paths.styles.src, style);
+  gulp.watch(paths.img.src, images);
   gulp.watch(paths.html.src, html);
 }
 
