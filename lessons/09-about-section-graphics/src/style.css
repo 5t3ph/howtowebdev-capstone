@@ -101,6 +101,13 @@ main {
   color: #767676;
 }
 
+#about {
+  background-image: url(img/stars-icon.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right center;
+}
+
 /* Component: Card */
 .card {
   border-radius: 8px;
@@ -204,6 +211,11 @@ main {
 .padding-v-md {
   padding-top: 24px;
   padding-bottom: 24px;
+}
+
+.padding-v-lg {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .margin-v-0 {
