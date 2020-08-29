@@ -56,7 +56,8 @@ select {
 /* Typography */
 h1,
 h2,
-h3 {
+h3,
+nav a {
   font-family: "Kulim Park", sans-serif;
 }
 
@@ -116,6 +117,43 @@ main {
     ),
     url(img/starry-sky.jpg);
   background-size: cover;
+}
+
+/* Component: Nav */
+nav {
+  background: rgba(251, 169, 195, 0.95);
+  padding: 0.25em 0;
+  display: inline-block;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  border-radius: 0 0 0 4px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  padding: 0 0.5em;
+}
+
+nav a {
+  color: #150f64;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav ul li + li {
+  border-left: 1px solid #cc6d8f;
 }
 
 /* Component: Card */
