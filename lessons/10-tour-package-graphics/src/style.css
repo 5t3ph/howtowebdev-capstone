@@ -108,10 +108,21 @@ main {
   background-position: right center;
 }
 
+#tours {
+  background-image: linear-gradient(
+      -20deg,
+      rgba(121, 147, 221, 0.5) 20%,
+      rgba(251, 169, 195, 0.9) 100%
+    ),
+    url(img/starry-sky.jpg);
+  background-size: cover;
+}
+
 /* Component: Card */
 .card {
   border-radius: 8px;
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.18);
+  background-color: #fff;
 }
 
 .card__img {
@@ -120,6 +131,12 @@ main {
   background-position: center;
   min-height: 20vh;
   border-radius: 8px 8px 0 0;
+  transition: box-shadow 80ms ease-in-out;
+  box-shadow: inset 0 0 30px 60px rgba(21, 15, 100, 0.3);
+}
+
+.card:hover .card__img {
+  box-shadow: inset 0 0 10px 10px rgba(21, 15, 100, 0.3);
 }
 
 .card__content {
