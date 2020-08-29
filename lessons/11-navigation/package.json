@@ -1,0 +1,16 @@
+{
+  "name": "11-navigation",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.html",
+  "keywords": [],
+  "author": "5t3ph",
+  "scripts": {
+    "start": "gulp"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2"
+  }
+}
