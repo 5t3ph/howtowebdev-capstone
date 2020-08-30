@@ -1,6 +1,6 @@
 # Learn Web Development With Steph
 
-## Capstone #9: About Section Graphics
+## Capstone #10: Tour Package Graphics
 
 [**Course information >**](https://learnfromsteph.dev)
 
