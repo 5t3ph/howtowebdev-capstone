@@ -57,7 +57,7 @@ select {
 h1,
 h2,
 h3,
-nav a {
+nav li {
   font-family: "Kulim Park", sans-serif;
 }
 
@@ -156,6 +156,10 @@ nav ul li + li {
   border-left: 1px solid #cc6d8f;
 }
 
+nav .active {
+  font-weight: bold;
+}
+
 /* Component: Card */
 .card {
   border-radius: 8px;
@@ -200,6 +204,44 @@ nav ul li + li {
   display: inline-block;
   line-height: 1.1;
   text-align: center;
+}
+
+button.button {
+  border: none;
+  cursor: pointer;
+}
+
+/*
+  * Component: Form
+  */
+
+form {
+  display: grid;
+  grid-gap: 24px;
+  max-width: 60ch;
+}
+
+.form-field {
+  display: grid;
+  grid-gap: 8px;
+}
+
+.form-input {
+  border: 1px solid #6075b0;
+  border-radius: 4px;
+  height: 2em;
+  padding: 0 0.5em;
+  font-size: 18px;
+}
+
+label {
+  color: #150f64;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+form .button {
+  justify-self: start;
 }
 
 /* Type Utilities */
