@@ -156,10 +156,6 @@ nav ul li + li {
   border-left: 1px solid #cc6d8f;
 }
 
-nav .active {
-  font-weight: bold;
-}
-
 /* Component: Card */
 .card {
   border-radius: 8px;
@@ -211,9 +207,7 @@ button.button {
   cursor: pointer;
 }
 
-/*
-  * Component: Form
-  */
+/* Component: Form */
 
 form {
   display: grid;
@@ -224,6 +218,10 @@ form {
 .form-field {
   display: grid;
   grid-gap: 8px;
+}
+
+.form-field .button {
+  justify-self: start;
 }
 
 .form-input {
@@ -238,10 +236,6 @@ label {
   color: #150f64;
   font-weight: bold;
   font-size: 18px;
-}
-
-form .button {
-  justify-self: start;
 }
 
 /* Type Utilities */
