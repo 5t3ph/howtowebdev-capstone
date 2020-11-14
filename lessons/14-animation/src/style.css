@@ -90,11 +90,40 @@ header h1 {
   line-height: 1.1;
 }
 
-header img {
+.unicorn {
   position: absolute;
   max-height: 48vh;
   max-width: 25vw;
   bottom: 1vh;
+}
+
+.header-logo {
+  height: 60px;
+  transition: all 450ms ease-in 80ms;
+  transform: translate(0, 0);
+}
+
+.header-logo:hover {
+  transform: translate(8vw, -300%) scale(0.6);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0.1;
+    transform: translateY(25%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@supports (animation: fadeIn) {
+  header p {
+    opacity: 0.1;
+    transform: translateY(25%);
+    animation: fadeIn 450ms ease-in 300ms forwards;
+  }
 }
 
 /* Main Content */
