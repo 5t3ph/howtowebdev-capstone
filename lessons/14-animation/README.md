@@ -1,6 +1,6 @@
 # Learn Web Development With Steph
 
-## Capstone 13: Responsive Mobile View
+## Capstone 14: Animation
 
 [**Course information >**](https://learnfromsteph.dev)
 
