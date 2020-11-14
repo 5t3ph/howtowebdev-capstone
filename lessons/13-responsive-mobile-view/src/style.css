@@ -109,6 +109,18 @@ main {
   background-position: right center;
 }
 
+@media (max-width: 800px) {
+  #about {
+    background-position: right top;
+    background-size: 25vw auto;
+    padding-top: 60px;
+  }
+
+  #about .max-line-length {
+    max-width: 50ch;
+  }
+}
+
 #tours {
   background-image: linear-gradient(
       -20deg,
@@ -117,6 +129,20 @@ main {
     ),
     url(img/starry-sky.jpg);
   background-size: cover;
+}
+
+@media (max-width: 767px) {
+  #tours .flexbox {
+    flex-wrap: wrap;
+  }
+
+  #tours .card {
+    flex-basis: 100%;
+  }
+
+  #tours .card + .card {
+    margin-top: 2em;
+  }
 }
 
 /* Component: Nav */
