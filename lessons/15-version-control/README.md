@@ -1,8 +1,6 @@
-# Learn Web Development With Steph
+# Unicorn Space Tours
 
-## Capstone 14: Animation
-
-[**Course information >**](https://learnfromsteph.dev)
+[**Created during the Learn From Steph course >**](https://learnfromsteph.dev)
 
 ## Building and running on localhost
 
