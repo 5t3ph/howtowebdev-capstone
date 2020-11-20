@@ -1,0 +1,375 @@
+/*
+ * [Modified] Modern CSS Reset
+ * @link https://github.com/hankchizljaw/modern-css-reset
+*/
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-size: 100%;
+  font-family: sans-serif;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+nav li {
+  font-family: "Kulim Park", sans-serif;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+/* Header */
+header {
+  position: relative;
+  padding: 60px 0;
+  min-height: 50vh;
+  text-align: center;
+  background-image: url("img/starry-sky.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 100vw 100vh rgba(21, 15, 100, 0.6);
+}
+
+header h1 {
+  color: #ff7ca6;
+  line-height: 1.1;
+}
+
+.unicorn {
+  position: absolute;
+  max-height: 48vh;
+  max-width: 25vw;
+  bottom: 1vh;
+}
+
+.header-logo {
+  height: 60px;
+  transition: all 450ms ease-in 80ms;
+  transform: translate(0, 0);
+}
+
+.header-logo:hover {
+  transform: translate(8vw, -300%) scale(0.6);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0.1;
+    transform: translateY(25%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@supports (animation: fadeIn) {
+  header p {
+    opacity: 0.1;
+    transform: translateY(25%);
+    animation: fadeIn 450ms ease-in 300ms forwards;
+  }
+}
+
+/* Main Content */
+main {
+  color: #767676;
+}
+
+#about {
+  background-image: url(img/stars-icon.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right center;
+}
+
+@media (max-width: 800px) {
+  #about {
+    background-position: right top;
+    background-size: 25vw auto;
+    padding-top: 60px;
+  }
+
+  #about .max-line-length {
+    max-width: 50ch;
+  }
+}
+
+#tours {
+  background-image: linear-gradient(
+      -20deg,
+      rgba(121, 147, 221, 0.5) 20%,
+      rgba(251, 169, 195, 0.9) 100%
+    ),
+    url(img/starry-sky.jpg);
+  background-size: cover;
+}
+
+@media (max-width: 767px) {
+  #tours .flexbox {
+    flex-wrap: wrap;
+  }
+
+  #tours .card {
+    flex-basis: 100%;
+  }
+
+  #tours .card + .card {
+    margin-top: 2em;
+  }
+}
+
+/* Component: Nav */
+nav {
+  background: rgba(251, 169, 195, 0.95);
+  padding: 0.25em 0;
+  display: inline-block;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  border-radius: 0 0 0 4px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  padding: 0 0.5em;
+}
+
+nav a {
+  color: #150f64;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav ul li + li {
+  border-left: 1px solid #cc6d8f;
+}
+
+/* Component: Card */
+.card {
+  border-radius: 8px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.18);
+  background-color: #fff;
+}
+
+.card__img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 20vh;
+  border-radius: 8px 8px 0 0;
+  transition: box-shadow 80ms ease-in-out;
+  box-shadow: inset 0 0 30px 60px rgba(21, 15, 100, 0.3);
+}
+
+.card:hover .card__img {
+  box-shadow: inset 0 0 10px 10px rgba(21, 15, 100, 0.3);
+}
+
+.card__content {
+  padding: 24px;
+}
+
+.card h3 span {
+  font-family: monospace;
+  font-size: 0.8em;
+  padding: 0.05em 0.25em;
+  background-color: rgba(255, 124, 166, 0.4);
+  border-radius: 4px;
+}
+
+/* Component: Button */
+.button {
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  background-color: #150f64;
+  text-decoration: none;
+  font-weight: bold;
+  color: #ff7ca6;
+  display: inline-block;
+  line-height: 1.1;
+  text-align: center;
+}
+
+button.button {
+  border: none;
+  cursor: pointer;
+}
+
+/* Component: Form */
+
+form {
+  display: grid;
+  grid-gap: 24px;
+  max-width: 60ch;
+}
+
+.form-field {
+  display: grid;
+  grid-gap: 8px;
+}
+
+.form-field .button {
+  justify-self: start;
+}
+
+.form-input {
+  border: 1px solid #6075b0;
+  border-radius: 4px;
+  height: 2em;
+  padding: 0 0.5em;
+  font-size: 18px;
+}
+
+label {
+  color: #150f64;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Type Utilities */
+.lead {
+  font-size: 125%;
+  letter-spacing: 0.03em;
+}
+
+.max-line-length {
+  max-width: 60ch;
+}
+
+.list-unstyled {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Color Utilities */
+.background-dark {
+  background-color: #150f64;
+  color: #dcd9ee;
+}
+
+.background-black {
+  background-color: #040234;
+  color: #dcd9ee;
+}
+
+.text-dark {
+  color: #150f64;
+}
+
+.text-medium {
+  color: #7893dc;
+}
+
+/* Utilities */
+
+.wrapper {
+  max-width: 1024px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flexbox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flexbox--aligncenter {
+  align-items: center;
+}
+
+.flexbox--3col > * {
+  flex: 0 1 30%;
+}
+
+.padding-v-md {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.padding-v-lg {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.margin-v-0 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.margin-v-lg {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}

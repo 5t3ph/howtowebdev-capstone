@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Booking | Unicorn Space Tours</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kulim+Park&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="/#about">About</a></li>
+        <li><a href="/#tours">Tours</a></li>
+        <li>Book Now</li>
+      </ul>
+    </nav>
+    <header class="background-dark">
+      <div class="wrapper center">
+        <img class="header-logo center" src="img/logo.svg" alt="UST logo" />
+        <h1>Book Your Tour</h1>
+        <p class="lead center max-line-length">
+          Complete the booking form, and get ready for blast off!
+        </p>
+      </div>
+      <img class="unicorn" src="img/unicorn.svg" alt="unicorn graphic" />
+    </header>
+    <main class="wrapper center">
+      <form class="center margin-v-lg padding-v-lg">
+        <div class="form-field">
+          <label for="first_name">First Name</label>
+          <input
+            class="form-input"
+            type="text"
+            name="first_name"
+            id="first_name"
+          />
+        </div>
+        <div class="form-field">
+          <label for="last_name">Last Name</label>
+          <input
+            class="form-input"
+            type="text"
+            name="last_name"
+            id="last_name"
+          />
+        </div>
+        <div class="form-field">
+          <label for="email">Email</label>
+          <input class="form-input" type="email" name="email" id="email" />
+        </div>
+        <div class="form-field">
+          <label for="tour">Tour</label>
+          <select class="form-input" name="tour" id="tour">
+            <option disabled selected>Make a selection</option>
+            <option value="Mars">Mars</option>
+            <option value="Saturn">Saturn</option>
+            <option value="Pluto">Pluto</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <button type="submit" class="button">Book My Tour</button>
+        </div>
+      </form>
+    </main>
+    <div class="background-black padding-v-md">
+      <footer class="wrapper center flexbox flexbox--aligncenter">
+        <img src="img/logo.svg" alt="Unicorn Space Tours" />
+        <p class="margin-v-0">&copy; 2020 Unicorn Space Tours</p>
+      </footer>
+    </div>
+  </body>
+</html>
