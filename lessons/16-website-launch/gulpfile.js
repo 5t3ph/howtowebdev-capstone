@@ -11,7 +11,7 @@ const paths = {
     dest: "./dist/",
   },
   img: {
-    src: ["./src/img/"],
+    src: ["./src/img/*"],
     dest: "./dist/img/",
   },
 };
@@ -54,3 +54,4 @@ function watch() {
 
 /* GULP TASKS */
 exports.default = watch;
+exports.build = gulp.series(style, html, images);

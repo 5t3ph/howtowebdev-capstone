@@ -6,7 +6,8 @@
   "keywords": [],
   "author": "5t3ph",
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
+    "build": "gulp build"
   },
   "dependencies": {},
   "devDependencies": {
